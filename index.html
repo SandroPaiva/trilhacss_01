@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+@font-face {
+    font-family: Raleway-Black;
+    src: local(), url('assets/fonts/static/Raleway-Black.ttf');
+}
+
+@font-face {
+    font-family: Raleway-light;
+    src: local(), url('assets/fonts/static/Raleway-Light.ttf');
+}
+
+@font-face {
+    font-family: Raleway-Medium;
+    src: local(), url('assets/fonts/static/Raleway-Medium.ttf');
+}
+
+@font-face {
+    font-family: Raleway;
+    src: local(), url('assets/fonts/static/Raleway-Regular.ttf');
+}
+
+
+body{
+    font-family: Raleway-Black;
+    background-color: #000;
+    margin: 0;
+}
+
+footer, header, main{
+    text-align: center;
+}
+
+.banner{
+    background-image: url(assets/img/banner.png), linear-gradient(#000000, #2c99c821, #000000);
+    text-align: center;
+    background-size:cover;
+    height: 605px;
+    border-bottom: solid #33A8DB 1px;
+}
+
+.banner-content{
+    padding: 56px 0px 56px 0px;
+    width: 510px;
+    height: 393px;
+    margin: auto;
+}
+
+.banner-content>h1{
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+}
+
+.banner-content>p{
+    color: #fff;
+    font-family: Raleway-light;
+    margin: 0px 52px 0px 52px;
+    text-align: justify;
+}
+
+button{
+    padding: 19px 55px 19px 55px; 
+    margin-top: 25px;
+    font-family: Raleway-Black;
+    text-transform: uppercase;
+    color: #33A8DB;
+    border: solid 2px #33A8DB;
+    background-color: transparent;
+    word-spacing: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.logo{
+    margin-top: 56px;
+    background-color: #00000070;
+    width: 268px;
+    height: 268px;
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+}
+
+.logo>img{
+    width: 248px;
+    height: 214px;
+    margin: auto;
+}
+
+#course-content{
+    text-align: center;
+    font-family: Raleway-Medium;
+    width: 792px;
+    height: 325px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+#course-content>h2{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #33A8DB;
+}
+
+.modules-list{
+    width: 535px;
+    margin: auto;
+}
+
+.module{
+    border: solid 2px #33A8DB;
+    border-radius: 50px;
+    background-color: #252525;
+    margin-top: 15px;
+    padding: 10px 0 10px 0;
+    cursor: pointer;
+    box-shadow: inset -2px 6px 4px #00000066;
+}
+
+.module>span{
+    color: #33A8DB;
+}
+
+
+#transform-world{
+    background-image: url('assets/img/woman-code.png');
+    background-color: #0000006e;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 111px 0 111px 0;
+}
+
+#transform-world>p{
+    width: 270px;
+    text-transform: lowercase;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 0.9;
+    margin: 0px 0 0 198px;
+    text-align: left;
+    letter-spacing: 2px;
+    color:#fff;
+    filter: drop-shadow(3px 2px 0px #33A8DB);
+}
+
+#professional-challenges>h2{
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0.19em;
+    text-align: center;
+    color: #33A8DB;
+    width: 748px;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+#professional-challenges>p{
+    color: #fff;
+    font-family: Raleway-light;
+    width: 792px;
+    margin: auto;
+}
+
+.dio-logo{
+  text-align: center;
+  padding: 55px 0 0 0;
+
+}
+
+footer>p{
+  color: #fff;
+  font-family: Raleway-light;
+}
+
+footer>p>a{
+  color: #33A8DB;
+  text-decoration: none;
+}
+
+
+
+  </style>
+  <title>Trilha de CSS - DIO</title>
+</head>
+<body>
+  <header class="banner">
+    <div class="banner-content">
+      <div class="logo">
+        <img src="assets/img/logo.png" title="Logotipo Trilha de CSS DIO" alt="Logotipo Trilha de CSS DIO">
+      </div>
+      <h1>Trilha de CSS da DIO</h1>
+      <p>A nova Trilha de CSS da DIO está disponível. Acesse já e aprenda do zero como desenvolver sites profissionais.</p>
+      <button>Quero me inscrever</button>
+    </div>
+  </header>
+  <main>
+    <section id="course-content">
+      <h2>O que vou aprender?</h2>
+      <p>
+        Temos 3 módulos recheados de conteúdos do básico ao avançado para que você aprenda a 
+        desenvolver sites profissionais utilizando somente HTML e CSS: sem nenhuma biblioteca ou framework a mais.
+      </p>
+      <div class="modules-list">
+        <div class="module">
+          <span>Módulo 01:</span> primeiros passos com CSS
+        </div>
+        <div class="module">
+          <span>Módulo 02:</span> trabalhando com layouts no CSS
+        </div>
+        <div class="module">
+          <span>Módulo 03:</span> refinando os estilos CSS das nossas páginas
+        </div>
+      </div>
+    </section>
+    <section id="transform-world">
+      <p>TRANSFORME O MUNDO COM A GENTE</p>
+    </section>
+    <section id="professional-challenges">
+      <h2>Evolua e encare novos desafios profissionais</h2>
+      <img src="assets/img/professional-challenges.png" title="Homem lendo depoimentos em um tablet" alt="Homem lendo depoimentos em um tablet">
+      <p>
+        Junte-se ao nosso ecossistema e transforme o mundo com a gente! Todos os dias dezenas de empresas 
+        acessam a nossa plataforma em busca dos talentos mais criativos, dinâmicos e colaborativos, 
+        além do conhecimento técnico. 
+        A nossa missão é te preparar para que você conecte-se com as melhores oportunidades.
+      </p>
+    </section>
+  </main>
+  <footer>
+    <img class="dio-logo" src="assets/img/dio-logo.png" title="Logotipo DIO com o texto make the change" alt="Logotipo DIO com o texto make the change">
+    <p>Acesse <a href="https://dio.me">dio.me</a> e se cadastre agora</p>
+  </footer>
+</body>
+</html>
